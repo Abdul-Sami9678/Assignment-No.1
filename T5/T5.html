@@ -1,1 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
 
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+        color: black;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        margin-bottom: 20px;
+      }
+
+      header {
+        background-color: #ddd;
+        text-align: center;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2px solid #ddd;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 20px;
+      }
+
+      header img {
+        width: 100px;
+        height: 120px;
+        border-radius: 2px;
+        margin-left: 20px;
+      }
+
+      header h1 {
+        margin-top: 10px;
+      }
+
+      nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      nav ul li {
+        margin-right: 10px;
+      }
+
+      nav ul li a {
+        color: black;
+        text-decoration: none;
+        display: inline-block;
+        padding: 5px 10px;
+        border: 1px solid black;
+        border-radius: 5px;
+      }
+
+      nav ul li a:hover {
+        color: blue;
+      }
+
+      footer {
+        background-color: #ddd;
+        text-align: center;
+        padding: 10px 0;
+        margin-top: 20px;
+      }
+
+      .button {
+        display: inline-block;
+        border-radius: 4px;
+        background-color: blue;
+        border: none;
+        color: white;
+        text-align: center;
+        font-size: 10px;
+        padding: 12px;
+        width: 120px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+
+      .button span:after {
+        content: "\00bb";
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+      }
+
+      .button:hover span {
+        padding-right: 25px;
+      }
+
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+
+      section {
+        transition: width 2s, height 2s;
+        width: 100%; /* Set width to fill the page */
+        height: 300px;
+        overflow: hidden; /* Hide overflow content */
+      }
+
+      section:hover {
+        height: 500px;
+      }
+
+      section div {
+        transition: inherit;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>CH UMAIR SATTAR</h1>
+        <h3>PASSIONATE STUDENT</h3>
+        <nav>
+          <ul>
+            <li><a href="https://github.com/" target="_blank">Github</a></li>
+            <li>
+              <a href="https://pk.linkedin.com/" target="_blank">Linked-in</a>
+            </li>
+            <li>
+              <a href="mailto:f200430@cfd.nu.edu.pk" target="_parent">Gmail</a>
+            </li>
+
+            <img
+              src="C:\Users\Hp\OneDrive\Desktop\WhatsApp Image 2024-02-12 at 20.48.46_b57374e6.jpg"
+              alt="Profile Picture"
+            />
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <section id="about-me" class="container" style="height: 90px">
+      <h2><u>About Me</u></h2>
+      <div>
+        <p>
+          I am a CS student currently working on my Final year project (FYP)
+          which is based on blockchain.
+        </p>
+      </div>
+    </section>
+
+    <section id="personal-info" class="container" style="height: 250px">
+      <h2><u>Personal Information</u></h2>
+      <div>
+        <p><b>~Date of Birth:</b>September 02, 2001</p>
+        <p><b>~Nationality:</b>Pakistani</p>
+        <p><b>~Address:</b>Lahore, Pakistan</p>
+        <p><b>~Email:</b>usattar307@gmail.com</p>
+        <p><b>~Phone:</b>0305-7362141</p>
+      </div>
+    </section>
+
+    <section id="education" class="container" style="height: 200px">
+      <h2><u>Education</u></h2>
+      <div>
+        <p><b>~Degree:</b>Bs Cs</p>
+        <p><b>~Institude:</b>FAST NUCES</p>
+        <p><b>~Graduation year:</b>2024</p>
+      </div>
+    </section>
+
+    <section id="projects" class="container" style="height: 400px">
+      <h2><u>My Projects</u></h2>
+      <div>
+        <p><b>Project1:</b> pizza delight webpage</p>
+        <p>
+          Pizza Delight is a web application that allows users to explore a
+          variety of pizzas and place orders online. It provides a user-friendly
+          interface where customers can easily browse through different pizza
+          options, customize their orders, and make payments securely. The
+          application also includes features for tracking order status and
+          providing feedback.
+        </p>
+        <button class="button"><span>Show Details</span></button>
+        <br />
+        <p><b>Project2:</b> Gym hub</p>
+        <p>
+          GymHub is a comprehensive website designed to cater to all fitness
+          enthusiasts, offering a range of features and services to help users
+          achieve their fitness goals. Developed using Java for backend
+          functionalities and HTML/CSS for the frontend, GymHub provides a
+          seamless and user-friendly experience for individuals looking to
+          engage in various fitness activities.
+        </p>
+      </div>
+      <button class="button"><span>Show Details</span></button>
+    </section>
+
+    <section id="skills" class="container" style="height: 150px">
+      <h2><u>Skills</u></h2>
+      <div>
+        <p>1: Problem-solving</p>
+        <p>2: Management skills</p>
+        <p>3: Quality</p>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <p>Contact me at: usattar307@gmail.com</p>
+      </div>
+    </footer>
+  </body>
+</html>
